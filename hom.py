@@ -13,7 +13,7 @@ def calculate_factorial(d):
     else:
         factorial = 1
         for i in range(2, d + 1):
-            factorial *= 1.
+            factorial *= i
         return factorial
     
  # Decorator function
@@ -42,15 +42,20 @@ def merge_dicts(dict1, dict2):
     return merged
 
 
-    class Car:
-      def __init__(self, make, model, year):
-       
+
+class Car:
+   
+    
+    def __init__(self, make, model, year):
+        """
+        Initializes the Car with make, model, and year.
+        """
         self.make = make
         self.model = model
         self.year = year
 
     def display_info(self):
-       
-       
-        print(f"Car Information: {self.year} {self.make} {self.model}")
-
+        """
+        Returns a formatted string with the car's information.
+        """
+        return f"Car Information: {self.year} {self.make} {self.model}"
